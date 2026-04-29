@@ -1,21 +1,26 @@
 import "./App.scss";
-import Navbar from "./components/navbar";
+
+import Navbar from "./components/Navbar";
 import Hero from './components/Hero';
 import Varieties from './components/Varieties';
-import Story from './components/Story';
+import Story from './components/story';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import BrandFeel from "./BrandFeel";
+import TrustUS from "./components/Trust";
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <main style={{ paddingTop: '5rem' }}>
+        <main style={{marginTop: '68.8px'}}>
           <Hero />
-          <Varieties />
+          <BrandFeel />
+          <TrustUS />
+          {/* <Varieties />
           <Story />
-          <Newsletter />
+          <Newsletter /> */}
         </main>
         <Footer />
       </div>

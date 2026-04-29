@@ -30,9 +30,7 @@ export const VARIETIES = [
 ];
 
 export const NAVIGATION_LINKS = [
-  { name: 'Shop All', href: '#', active: true },
-  { name: 'Varieties', href: '#' },
-  { name: 'Gifts', href: '#' },
-  { name: 'Our Orchard', href: '#' },
-  { name: 'Recipes', href: '#' },
+  { name: 'Product', href: '#', active: true },
+  { name: 'About', href: '#' },
+  { name: 'Contact', href: '#' }
 ];

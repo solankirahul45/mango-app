@@ -7,9 +7,9 @@ export default function Navbar() {
       <nav className="nav-container">
         <div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
           <a className="nav-logo" href="/">
-            Sun-Drenched Mangos
+            Mango Basket
           </a>
-          <div className="nav-links">
+          {/* <div className="nav-links">
             {NAVIGATION_LINKS.map((link) => (
               <a
                 key={link.name}
@@ -19,7 +19,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="nav-actions">
