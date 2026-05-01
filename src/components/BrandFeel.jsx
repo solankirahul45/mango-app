@@ -1,4 +1,4 @@
-import BrandImage from '../assets/mango-home.png';
+import BrandImage from '../assets/mango-home-mini.png';
 
 const BrandFeel = () => {
     return ( 

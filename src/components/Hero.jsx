@@ -1,4 +1,4 @@
-import MangoBanner from '../assets/mango-trees-banner.png';
+import MangoBanner from '../assets/mango-trees-banner-mini.png';
 
 export default function Hero() {
   return (
