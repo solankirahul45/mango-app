@@ -1,3 +1,5 @@
+import BrandImage from '../assets/mango-home.png';
+
 const BrandFeel = () => {
     return ( 
         <div className="common-details brand-feel">
@@ -18,7 +20,7 @@ const BrandFeel = () => {
             </div>
 
             <div className="brand-add-to-cart">
-                
+                <img src={BrandImage} alt='Mango Basket' />
             </div>
         </div>
     );

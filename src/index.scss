@@ -5,7 +5,7 @@
   --color-background: #FFF8EC;
   --color-on-surface: #1b1c1a;
   --color-on-surface-variant: #514532;
-  --color-primary: #7c5800;
+  --color-primary: #d97706;
   --color-primary-container: #ffb800;
   --color-on-primary-container: #6b4c00;
   --color-secondary: #1F5B2C;
@@ -582,6 +582,11 @@ button {
   background-color: #fafaf9;
   border-top: 1px solid #e7e5e4;
   padding: 4rem 2rem;
+
+  .contact-us p {
+    line-height: 30px;
+    color: #78716c;
+  }
 }
 
 .footer-grid {
@@ -598,7 +603,7 @@ button {
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -656,7 +661,7 @@ button {
   border-bottom: 1px solid #ccc;
 
   h2 {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-size: 2.5rem;
     padding: 0 0 2rem;
   }
@@ -708,7 +713,10 @@ button {
     .brand-add-to-cart {
       width: 100%;
       height: 250px;
-      background-color: var(--color-secondary);
+
+      img {
+        border-radius: 120px 10px;
+      }
     }
   }
 }

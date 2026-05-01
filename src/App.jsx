@@ -1,27 +1,19 @@
-import "./App.scss";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from './components/Hero';
-import Varieties from './components/Varieties';
-import Story from './components/story';
-import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import BrandFeel from "./BrandFeel";
-import TrustUS from "./components/Trust";
+import Homepage from "./components/homepage";
+
+import "./App.scss";
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <main style={{marginTop: '68.8px'}}>
-          <Hero />
-          <BrandFeel />
-          <TrustUS />
-          {/* <Varieties />
-          <Story />
-          <Newsletter /> */}
-        </main>
+        <Routes>
+          <Route path='/' element={<Homepage />}></Route>
+        </Routes>
         <Footer />
       </div>
     </>

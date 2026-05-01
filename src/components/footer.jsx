@@ -1,4 +1,6 @@
 // import { Instagram, Mail, Twitter } from 'lucide-react';
+import Instagram from '../assets/instagram.png';
+import Facebook from '../assets/facebook.png';
 
 export default function Footer() {
   return (
@@ -17,31 +19,40 @@ export default function Footer() {
           </div>
         </div>
         
-        <div>
+        <div className="contact-us">
           <h4 className="footer-links-title">Contact Us</h4>
           
           <p>
-            
+            📍Narottam Park Society, Bilimora, Gujarat - 396321
+          </p>
+
+          <p>
+            📧 <strong>Email:</strong> support@mangocrown.in
+          </p>
+
+          <p>
+            💬 <strong>WhatsApp:</strong> +91 98765 43210
+          </p>
+
+          <p>
+            🥭 <strong>FSSAI Lic. No:</strong> 11526999000123
           </p>
         </div>
 
-        <div>
+        <div className="connect">
           <h4 className="footer-links-title">Connect</h4>
           <div className="footer-socials">
-            {/* <a className="social-icon" href="#">
-              <Instagram size={20} color="#57534e" />
+            <a className="social-icon" href="#">
+              <img src={Instagram} width={'16px'} />
             </a>
             <a className="social-icon" href="#">
-              <Twitter size={20} color="#57534e" />
+              <img src={Facebook} width={'16px'} />
             </a>
-            <a className="social-icon" href="#">
-              <Mail size={20} color="#57534e" />
-            </a> */}
           </div>
 
-          <a href="#">Privacy</a>
+          {/* <a href="#">Privacy Policy</a> */}
 
-          <p style={{ color: '#a8a29e', fontSize: '0.75rem' }}>© 2024 Sun-Drenched Mangos. Harvested with Love.</p>
+          <p style={{ color: '#78716c', fontSize: '1rem', marginTop: '20px'  }}>© 2026 Mango Basket. Harvested with Love.</p>
         </div>
       </div>
     </footer>
