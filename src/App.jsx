@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "@/components/Navbar.jsx";
-import Footer from "@/components/Footer.jsx";
-// import Homepage from "./components/Homepage.jsx";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Homepage from "@/components/Homepage";
 
 import "./App.scss";
-import Homepage from "@/components/homepage.jsx";
 
 function App() {
   return (
