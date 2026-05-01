@@ -1,6 +1,6 @@
-import Hero from '../components/Hero';
-import BrandFeel from '../components/BrandFeel';
-import TrustUS from "../components/Trust";
+import Hero from './Hero';
+import BrandFeel from './BrandFeel';
+import TrustUS from "./Trust";
 
 const Homepage = () => {
     return ( 
