@@ -63,6 +63,19 @@ button {
   font-family: inherit;
 }
 
+h2 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  padding: 0 0 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-paragraph);
+  font-weight: 500;
+  padding: 0 0 1rem;
+}
+
 .container {
   /* max-width: var(--container-max); */
   width: 100%;
@@ -227,13 +240,14 @@ button {
 }
 
 .btn-primary:hover {
-  background-color: #ffba20;
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 .btn-secondary {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--color-on-secondary-container);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--color-on-secondary-container);
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.75rem;
@@ -242,7 +256,7 @@ button {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-secondary);
 }
 
 /* Varieties Grid */
@@ -717,6 +731,94 @@ button {
       img {
         border-radius: 120px 10px;
       }
+    }
+  }
+}
+
+// products css
+.product-section {
+  margin-top: 138.8px;
+  padding: 0px 0 50px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .product-order {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 6px;
+    padding: 50px 30px;
+    border: 1px solid rgb(227 226 223 / 0.5);
+    box-shadow: 0 10px 40px -10px rgba(74, 50, 0, 0.12);
+
+    .product-image {
+      flex-basis: 49%;
+
+      img {
+        border-radius: 4px;
+      }
+    }
+
+    .product-details {
+        flex-basis: 49%;
+
+        h4 {
+          color: var(--color-on-secondary-container);
+          font-size: 1.5rem;
+          padding: 0 0 0.5rem;
+        }
+
+        p {
+          text-align: left;
+        }
+
+        .select-order {
+          display: flex;
+          align-items: center;
+          margin: 20px 0 30px;
+
+          span.added-quantity {
+            color: var(--color-primary);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            margin: 0 20px 0 0;
+
+            svg {
+              margin: 0 0 0 10px;
+            }
+          }
+
+          span.added-details {
+            border: 2px solid var(--color-primary);
+            font-size: 1rem;
+            padding: 5px 10px;
+            margin: 0 20px 0 0;
+            border-radius: 2px;
+            color: var(--color-primary);
+          }
+
+          span.added-price {
+            color: var(--color-on-secondary-container);
+            font-size: 1rem;
+          }
+        }
+
+        .add-to-cart {
+          margin: 20px 0 0;
+
+          button {
+            margin: 0 16px 0 0;
+          }
+        }
     }
   }
 }

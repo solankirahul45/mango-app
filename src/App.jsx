@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Homepage from './routes/Homepage';
 
 import "./App.scss";
+import Products from "./routes/Products";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Homepage />}></Route>
+          <Route path="products" element={<Products />}></Route>
         </Routes>
         <Footer />
       </div>
