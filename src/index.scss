@@ -822,3 +822,139 @@ p {
     }
   }
 }
+
+//checkout css
+.product-section {
+  .product-address {
+    flex-basis: 59%;
+    padding: 0 50px 0 0;
+    border-right: 1px solid #ccc;
+    
+    h4 {
+      color: var(--color-on-secondary-container);
+      padding: 0 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .row {
+      width: 100%;
+
+      .form-group {
+        position: relative;
+
+        label {
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: var(--color-on-primary-fixed);
+          display: block;
+          margin: 0 0 0.5rem;
+        }
+
+        input {
+          background: #f6f6f6;
+          border-radius: 6px;
+          color: var(--color-paragraph);
+          font-size: 1rem;
+          padding: 10px;
+          outline: none;
+          border: 1px solid #ccc;
+          width: 100%;
+          margin: 0 0 1rem;
+        }
+      }
+
+      &.column2 {
+        display: flex;
+        justify-content: space-between;
+
+        .form-group {
+          width: 49%;
+        }
+      }
+
+      &.column3 {
+        display: flex;
+        justify-content: space-between;
+
+        .form-group {
+          width: 31.33%;
+        }
+      }
+    }
+  }
+
+  .product-cart-summary {
+    flex-basis: 39%;
+    padding: 0 0 0 20px;
+
+    h4 {
+      color: var(--color-on-secondary-container);
+      padding: 0 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .cart-item {
+      display: flex;
+      margin: 0 0 0.5rem;
+
+      .cart-item-image {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 16px 0 0;
+        
+        img {
+          object-fit: cover;
+          border-radius: 0.75rem;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .cart-item-details {
+        width: calc(100% - 6rem);
+
+        h5 {
+          font-size: 1rem;
+          color: var(--color-primary);
+        }
+
+        p {
+          font-size: 0.8rem;
+          padding: 0 0 0.5rem;
+        }
+
+        .cart-price-details {
+          display: flex;
+          justify-content: space-between;
+
+          b {
+            color: var(--color-on-primary-container);
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+
+          span {
+            color: var(--color-paragraph);
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .cart-total {
+      border-bottom: 1px solid #ccc;
+      padding: 0.8rem 0 1rem;
+      margin: 1.5rem 0 1rem;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+
+      span {
+        color: var(--color-on-primary-container);
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
