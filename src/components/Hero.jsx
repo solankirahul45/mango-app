@@ -1,6 +1,14 @@
 import MangoBanner from '../assets/mango-trees-banner-mini.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const NavigateProducts = () => {
+      navigate('/products');
+  }
+
+
   return (
     <section className="hero">
       <div className="hero-bg">
@@ -24,7 +32,7 @@ export default function Hero() {
           </p>
 
           <div className="btn-group">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={NavigateProducts}>
               Order Your Box Today
             </button>
           </div>
