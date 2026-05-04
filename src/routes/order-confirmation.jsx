@@ -1,4 +1,4 @@
-import {ShoppingBasket } from 'lucide-react';
+import {ShoppingBasket, CircleCheck } from 'lucide-react';
 import CartImage from '../assets/mango-cart.png'
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ const OrderConfirmation = () => {
 
     return (
         <div className="product-section">
+            <span className='circle-check-thanks'><CircleCheck size={'48px'} color='#1F5B2C' /></span>
             <h2>Thank You for Your Order!</h2>
             <p>We've received your request and our orchard team is already selecting the most vibrant, sun-ripened fruit for your delivery.</p>
 
